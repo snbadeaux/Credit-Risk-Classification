@@ -1,9 +1,9 @@
 # Credit-Risk-Classification
+Machine learning techniques such as logistic regression, are used to analyze a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.<br>
 
 # Overview
-Machine learning techniques such as logistic regression, are used to analyze a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.<br><br>
 
-   The factors considered in this analysis included the size of the loan, interest rate, the borrower's income, the debt-to-income ratio, the number of accounts the borrower holds, derogatory marks against the borrower, and total debt. All these factors, together, were set as the independent variable (X). After training the model, with around 70% of the data, we ask it to predict y, which we set up as loan status. The loan status column contains either a 0 or a 1, where 0 means the loan is healthy, and a 1 means that the loan is at a high risk of defaulting. <br><br>
+   The factors considered in this analysis included the size of the loan, interest rate, the borrower's income, the debt-to-income ratio, the number of accounts the borrower holds, derogatory marks against the borrower, and total debt. All these factors, together, were set as the independent variable (X). After training the model, with around 70% of the data, we ask it to predict y, which we set up as loan status. The loan status column contains either a 0 or a 1, where 0 means the loan is healthy, and a 1 means that the loan is at a high risk of defaulting. <br>
 
    Two models were run, the first of which used logistic regression and only sampled the data points once to predict an outcome. The second model used some of the data points more than once, with the Random Over Sampler technique, in order to balance the counts of the minority class, which in this case was 1 (high-risk loans). We called this data, Resampled Data. Logistic Regression was then also used in order to predict an outcome, with the hopes that the overall accuracy would increase.
 
@@ -28,3 +28,8 @@ The resampled logistic regression model predicts a healthy, low-risk loan with 1
 Model 2 is less likely to predict false negative results. However, based on the confusion matrices for each model, Model 2 predicted slightly more false positives (low-risk when the actual was high-risk).<br>
 
 If the goal of the model is to determine the likelihood of high-risk loans, neither model scores above 90% precision. Model 2 had fewer false predictions of the testing data overall and would be the best model to use based on the high accuracy and recall of this model.
+
+# Sources
+1. Dataset provided by edX Boot Camps LLC
+2. ChatGPT https://chat.openai.com/
+
