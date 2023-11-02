@@ -21,3 +21,10 @@ Machine Learning Model 2 (Resampled Data):<br>
 2. Precision: for healthy loans, the precision is 1.00, for high-risk loans, the precision is 0.87.
 3. Recall: for healthy loans, the recall score is 1.00, for high-risk loans, the recall score is 1.00.
 4. F1-Score: for healthy loans, the f1-score is 1.00, for high-risk loans, the f1-score is 0.93.<br>
+
+# Summary
+The resampled logistic regression model predicts a healthy, low-risk loan with 100% precision. It predicts a high-risk loan with lower precision at 87%. The balanced accuracy of the model is 100%. Overall, the classification report stayed relatively the same, even with the oversampling actions of trying to improve the minority class predictive performance. The only thing that truly changed, with any significance, was the balanced accuracy score. It went from 99% to 100%. However, this could possibly be due to overfitting. More cross-validation techniques would need to be used in order to verify these predictive outcomes.<br>
+
+Model 2 is less likely to predict false negative results. However, based on the confusion matrices for each model, Model 2 predicted slightly more false positives (low-risk when the actual was high-risk).<br>
+
+If the goal of the model is to determine the likelihood of high-risk loans, neither model scores above 90% precision. Model 2 had fewer false predictions of the testing data overall and would be the best model to use based on the high accuracy and recall of this model.
